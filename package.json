@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Iinguistics/ticketing-send-order-notification#readme",
   "dependencies": {
     "@jmsgoytia-ticketing/common": "^1.0.57",
+    "@types/aws-lambda": "^8.10.137",
     "aws-sdk": "^2.1610.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5"
