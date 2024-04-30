@@ -16,7 +16,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
@@ -27,7 +27,7 @@ jobs:
       - name: Archive Lambda Function
         run: |
           zip -r function.zip .
-          mv function.zip $GITHUB_WORKSPACE
+        #   mv function.zip $GITHUB_WORKSPACE
 
       - name: Deploy Lambda Function
         uses: aws-actions/configure-aws-credentials@v2
